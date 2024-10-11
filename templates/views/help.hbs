@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Help</title>
+        <link rel="icon" href="/img/icon.png">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        {{>header}}
+        <div class="box-wrapper" style="justify-content: flex-start;">
+            <div>Q and A</div>
+            <div><a href="/help/long">{{getIndex list 0}}</a></div>
+            <div><a href="/help/lat">{{getIndex list 1}}</a></div>
+            <div><a href="/help/percip">{{getIndex list 2}}</a></div>
+        </div>
+        {{>footer}}
+    </body>
+</html>

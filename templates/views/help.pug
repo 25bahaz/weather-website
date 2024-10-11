@@ -1,0 +1,19 @@
+doctype html
+
+html
+    head
+        title Help
+        link(rel="icon" href="/img/icon.png")
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="/css/styles.css")
+    body 
+        include ../partials/header.pug
+        div(class="box-wrapper" style="justify-content: flex-start;")
+            div Q and A
+            div
+                a(href="/help/long")= list[0]
+            div
+                a(href="/help/lat")= list[1]
+            div
+                a(href="/help/percip")= list[2]
+        include ../partials/footer.pug
