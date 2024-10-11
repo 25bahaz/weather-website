@@ -1,5 +1,4 @@
 window.addEventListener('load', () => {
-  console.log("Client-based JavaScript is now loaded...");
 
   const weatherForm = document.querySelector('.top-box-search-form');
   const search = document.querySelector('.top-box-search-form-input');
