@@ -14,9 +14,8 @@ The API's:
 
 To Run this application in the terminal run:
 
-    ````
     nodemon src/app.js -e css,hbs,js,svg  
-    ````
+
 
 Required NPM packages:
 
