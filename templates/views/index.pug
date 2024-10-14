@@ -1,0 +1,38 @@
+doctype html
+head
+  title Weather
+  link(rel='icon' href='/img/icon.png')
+  meta(charset='UTF-8')
+  link(rel='stylesheet' href='/css/styles.css')
+| {{&gt;header}}
+.box-wrapper
+  .top-box
+    .top-box-search
+      div(style='padding:5px;') Right now in, 
+      form.top-box-search-form(style='display:flex;')
+        input.top-box-search-form-input
+      .top-box-search-description
+  .bottom-box
+    .bottom-box-each-box
+      #bottom-box-each-box-forecast-1
+      .top-box-time-date
+      div
+        iframe#map(width='100%' height='200' frameborder='0' scrolling='no' marginheight='0' marginwidth='0')
+    .bottom-box-each-box
+      .bottom-box-each-box-temperature
+      .bottom-box-each-box-feelslike
+    .bottom-box-each-box
+      .bottom-box-each-attribute-wind
+        .bottom-box-each-attribute-wind-img
+          img#wind-img(src='/img/wind.svg' alt='wind')
+        .bottom-box-each-attribute-wind-value
+      .bottom-box-each-attribute-chance-of-rain
+        .bottom-box-each-attribute-rain-img
+          img#rain-img(src='/img/umbrella.svg' alt='umbrella')
+        .bottom-box-each-attribute-rain-value
+      .bottom-box-each-attribute-humidity
+        .bottom-box-each-attribute-drop-img
+          img#humidity-img(src='/img/drop.svg' alt='drop')
+        .bottom-box-each-attribute-drop-value
+|         {{&gt;footer}}
+script(type='module' src='/js/index.js')

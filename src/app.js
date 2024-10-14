@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
-const hbs = require('hbs');
+const hbs = require('hbs');/* 
+const pug = require('pug'); */
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
@@ -98,7 +99,7 @@ app.get('/help/lat', (req, res) => {
 })
 
 app.get('/help/percip', (req, res) => {
-    res.send('Percip is the percantage of the rain per meter square')
+    res.send('Percip is the percantage of the rain per milli meter square')
 })
 
 app.get('/help/*', (req, res) => {
@@ -119,5 +120,4 @@ app.get('*' , (req, res) => {
 
 app.listen(3000, async () => {
     console.log('Server is up on 3000.')
-
 })
